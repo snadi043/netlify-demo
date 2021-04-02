@@ -18,6 +18,8 @@ const About = () => {
             • Implemented projects in software development methodologies such as Agile, Scrum and Waterfall. <br/><br/>
             • Experience in using Integrated Development Environments (IDE) such as Eclipse, Visual Studio and Sublime Text 3.<br/><br/>
             • Experience in working with project tracking tools like JIRA, Freed Camp and Microsoft Visio. <br/><br/>
+            • Experience in working with google analytics to track the website traffic and to understand users requirements. 
+            
             </p>
         </div>
     );
