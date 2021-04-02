@@ -1,22 +1,31 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './component/Home';
+import Footer from './component/Footer';
+import About from './component/About';
+import Nav from './component/Nav';
+import Skills from './component/Skills';
+import Work from './component/Work';
+import Contact from './component/Contact';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Yo, WE DID IT</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div className="App">
+        <Nav/>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/skills" component={Skills} />
+          <Route exact path="/work" component={Work} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+        <Footer/>
+      
     </div>
+    </Router>
+    
   );
 }
 
