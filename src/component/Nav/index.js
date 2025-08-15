@@ -16,14 +16,15 @@ const Nav = () => {
     }
   };
 
-//   const handleClose = () => {
-//     if (screenWidth < 600) {
-//       setOpen(false);
-//     }
-//   };
+  const handleClose = () => {
+    if (screenWidth < 600) {
+      setOpen(false);
+    }
+  };
 
   useEffect(() => {
     trackScreenWidth();
+    handleClose();
     window.addEventListener("resize", trackScreenWidth);
     return () => window.removeEventListener("resize", trackScreenWidth);
   }, []);
