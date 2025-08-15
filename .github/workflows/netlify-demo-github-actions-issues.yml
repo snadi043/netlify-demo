@@ -1,5 +1,7 @@
 name: netlif-demo-github-actions-issues
-on: issues
+on: 
+  issues:
+    types: [opened, edited]
 jobs:
   netlify-application-issues:
     runs-on: macos-latest
