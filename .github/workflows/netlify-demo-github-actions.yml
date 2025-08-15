@@ -46,6 +46,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 23
+      - name: Update post CSS parser
+        run: npm update postcss postcss-safe-parser
       - name: Update the packages
         run: npm install
       - name: Install the dependencies
