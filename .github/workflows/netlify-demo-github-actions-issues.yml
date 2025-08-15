@@ -1,0 +1,8 @@
+name: netlif-demo-github-actions-issues
+on: issues
+jobs:
+  netlify-application-issues:
+    runs-on: macos-latest
+    steps:
+      - name: Display the github context on issue
+        run: echo "${{ toJSON(github) }}"
