@@ -16,7 +16,7 @@ const Home = () => {
                 </Link>
             </div>
             <div className="Person">
-                <img src="burger-logo.png" alt="MY PICTURE"/>
+                <img src="https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png" alt="my_profile"/>
             </div>
             
         </div>
