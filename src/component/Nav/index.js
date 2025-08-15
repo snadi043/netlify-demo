@@ -27,7 +27,7 @@ const Nav = () => {
     handleClose();
     window.addEventListener("resize", trackScreenWidth);
     return () => window.removeEventListener("resize", trackScreenWidth);
-  }, []);
+  }, [handleClose]);
 
     return (
         <nav className="NavBar"> 
