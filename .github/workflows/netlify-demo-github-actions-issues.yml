@@ -5,4 +5,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Display the github context on issue
-        run: echo "${{ toJSON(github) }}"
+        run: echo "${{ toJSON(github.event) }}"
