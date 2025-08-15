@@ -1,5 +1,5 @@
 import React from 'react';
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useCallback} from 'react';
 import {Link} from 'react-router-dom';
 import './style.css';
 
@@ -16,11 +16,11 @@ const Nav = () => {
     }
   };
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     if (screenWidth < 600) {
       setOpen(false);
     }
-  };
+  }, [screenWidth]);
 
   useEffect(() => {
     trackScreenWidth();
