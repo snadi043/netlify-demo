@@ -2,6 +2,7 @@ name: netlif-demo-github-actions-issues
 on: 
   issues:
     types: [opened, edited]
+  push:
 jobs:
   netlify-application-issues:
     runs-on: macos-latest
