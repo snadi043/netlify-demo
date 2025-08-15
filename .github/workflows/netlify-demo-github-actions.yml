@@ -49,11 +49,11 @@ jobs:
       - name: Update post CSS parser
         run: npm update postcss postcss-safe-parser
       - name: Update the packages
-        run: npm install
+        run: NODE_OPTIONS=--openssl-legacy-provider npm install
       - name: Install the dependencies
         run: npm ci
       - name: Build the code
-        run: npm run build
+        run: NODE_OPTIONS=--openssl-legacy-provider npm run build
       - name: Deploy the application
         run: echo "Deploying the application to the server."
    
