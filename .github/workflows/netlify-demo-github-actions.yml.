@@ -1,6 +1,8 @@
 name: netlify-application-workflow
 on: 
-  push
+  push:
+    branches:
+      - 'master'
 jobs:
   netlify-application-job-lint:
     runs-on: macos-latest
