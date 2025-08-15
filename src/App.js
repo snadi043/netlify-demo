@@ -11,6 +11,20 @@ import './App.css';
 
 function App() {
   return (
+      <header class="App-header">
+        <img alt="logo" class="App-logo" src="logo.svg" />
+        <p>
+          Edit<code> src/App.js </code>and save to reload.
+        </p>
+        <a
+          class="App-link"
+          href="https://reactjs.org"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Learn React
+        </a>
+      </header>
     <Router>
       <div className="App">
         <Nav/>
