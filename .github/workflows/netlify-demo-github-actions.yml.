@@ -4,6 +4,14 @@ jobs:
   netlify-application-job-lint:
     runs-on: macos-latest
     steps:
+      - name: Get the code
+        uses: actions/checkout@v5
+      - name: Install node
+        uses: actions/setup-node@v4
+        with: 
+          node-version: 23
+      - name: Install the dependencies
+        run: npm ci
       - name: Create Lint for the Javascript in the project
         run: echo "Linting completed successfully."
   netlify-application-job-test:
@@ -19,7 +27,7 @@ jobs:
       - name: Install the dependencies
         run: npm ci
       - name: Test the code
-        run: npm test
+        run: npm run test
   netlify-application-job-deploy:
     needs: netlify-application-job-test
     runs-on: macos-latest
